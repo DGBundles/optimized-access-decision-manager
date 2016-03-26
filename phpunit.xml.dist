@@ -20,6 +20,9 @@
                 <directory>./Tests</directory>
                 <directory>./Resources</directory>
                 <directory>./vendor</directory>
+                <file>./DGOptimizedAccessDecisionManagerBundle.php</file>
+                <file>./DependencyInjection/Configuration.php</file>
+                <file>./DependencyInjection/DGOptimizedAccessDecisionManagerExtension.php</file>
             </exclude>
         </whitelist>
     </filter>
