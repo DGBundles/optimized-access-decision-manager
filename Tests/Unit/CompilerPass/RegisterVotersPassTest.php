@@ -81,4 +81,22 @@ class RegisterVotersPassTest extends \PHPUnit_Framework_TestCase
 
         $this->compiler->process($this->containerMock->reveal());
     }
+
+    /**
+     * @expectedException \Symfony\Component\DependencyInjection\Exception\LogicException
+     */
+    public function testFailingOfCompiling()
+    {
+        $this->containerMock->hasDefinition('security.access.decision_manager')->willReturn(false);
+
+        $this->containerMock->findTaggedServiceIds('security.specific_voter')
+            ->shouldBeCalled()
+            ->willReturn([
+                'voter_1' => [
+                    []
+                ],
+            ]);
+
+        $this->compiler->process($this->containerMock->reveal());
+    }
 }
