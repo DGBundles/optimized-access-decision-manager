@@ -1,0 +1,21 @@
+{
+    "name": "dg/optimized-access-decision-manager-bundle",
+    "description": "Optimized voters selection for security check",
+    "type": "symfony-bundle",
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Grachikov",
+            "email": "dgrachikov@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "^3.0"
+    },
+    "autoload": {
+        "psr-4": { "DG\\OptimizedAccessDecisionManagerBundle\\": "" }
+    }
+}
