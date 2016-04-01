@@ -5,7 +5,7 @@
 The `DGOptimizedAccessDecisionManagerBundle` provides more efficient way
 of loading voters for security check than Security component does.
 
-More information can be found [here](http://dgrachikov.name/)
+More information can be found [here](http://dgrachikov.name/2016/03/30/symfony3-optimized-access-decision-manager/)
 
 ## LICENSE
 
